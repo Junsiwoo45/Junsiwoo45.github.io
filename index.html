@@ -1,171 +1,169 @@
 <!DOCTYPE HTML>
-<!--
-    Massively by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-    <head>
-        <title>Hayden Portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <!-- Inline CSS styles -->
-        <style>
-            /* Apply rounded corners to all images with class "rounded-image" */
-            .rounded-image {
-                border-radius: 10px; /* Adjust the value to control the roundness */
-            }
-			.icon-grid {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 10px;
-			justify-content: center
-   			 }
+<head>
+    <title>Hayden Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <!-- Inline CSS styles -->
+    <style>
+       
+        .rounded-image {
+            border-radius: 10px; 
+        }
 
-			.icon {
-				margin: 10px;
-				border: 1px solid #030000; /* Border around each icon */
-				transition: transform 0.3s ease; /* Smooth transition effect */
-			}
+        .icon-grid {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 10px;
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 20px; 
+        }
 
-			.icon img {
-				width: 100px; /* Set all images to the same width */
-				height: 100px; /* Set all images to the same height */
-				text-align: center;
-			}
+        .icon {
+            width: 100px; 
+            height: 100px; 
+            margin: 10px;
+            border: 1px solid #030000; 
+            transition: transform 0.3s ease; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            
+        }
 
-			.icon:hover {
-				transform: scale(1.1); /* Scale up slightly on hover */
-			}
-        </style>
-    </head>
-    <body class="is-preload">
-        
+        .icon img {
+            max-width: 80px; 
+            max-height: 80px; 
+            
+        }
 
-        <!-- Wrapper -->
-            <div id="wrapper" class="fade-in">
-                
+        .icon:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 0 10px lightslategray;
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-                <!-- Intro -->
-                    <div id="intro">
-                        <h1>Hayden Dickson</h1>
-                        <h3>A Software Engineer</h3>
-                        <ul class="actions">
-                            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-                        </ul>
-                    </div>
-                    
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
 
-                <!-- Header -->
-                    <header id="header">
-                        <a href="index.html" class="logo">Portfolio</a>
+        <!-- Intro -->
+        <div id="intro">
+            <h1>Hayden Dickson</h1>
+            <h3>A Software Engineer</h3>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly"></a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Portfolio</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#main">Projects</a></li>
+                <li><a href="#icon-grid-container">Skills</a></li>
+                <li><a href="Images/Resume-Hayden-Dickson.pdf" target="_blank">Resume</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Main Content -->
+        <div id="main">
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="https://github.com/Junsiwoo45/Pokemon-Team-Builder/tree/master">Pokémon Team Builder</a></h2>
+                    <h4>by Hayden Dickson</h4>
+                    <p>A frontend-backend Android application facilitating user selection of Pokémon to assemble teams.
+                        Using API calls calls to fetch and manipulate Pokémon data seamlessly, 
+                        and utilized RoomDB for local storage with dynamic adding and deleting capabilities.
+                    </p>
+                </header>
+                <a href="https://github.com/Junsiwoo45/Pokemon-Team-Builder/tree/master" class="image fit rounded-image"><img src="images/updatedPokemonpic.PNG" alt="" /></a>
+                <ul class="actions special">
+                    <li><a href="https://github.com/Junsiwoo45/Pokemon-Team-Builder/tree/master" class="button large">Check it out</a></li>
+                </ul>
+            </article>
+
+            <!-- Posts -->
+            <section class="posts">
+                <article>
+                    <header>
+                        <h2><a href="https://github.com/Junsiwoo45/Stewarts-Chemical-Tracker">Stewarts Chemical Tracker</a></h2>
                     </header>
-
-                <!-- Nav -->
-                <!-- Nav -->
-                <nav id="nav">
-                    <ul class="links">
-                        <li><a href="#intro">Home</a></li>
-                        <li><a href="#main">Projects</a></li>
-                        <li><a href="#footer">Skills</a></li>
-                        <li><a href="Images/Resume-Hayden-Dickson.pdf" target="_blank">Resume</a></li>
+                    <a href="https://github.com/Junsiwoo45/Stewarts-Chemical-Tracker" class="image fit rounded-image"><img src="images/Stewarts.PNG" style="width: 75%; height: 450px;" alt="" /></a>
+                    <p>Djano Fullstack application that allows the User to create an account, check chemicals, and calculate rates.</p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/Junsiwoo45/Stewarts-Chemical-Tracker" class="button">Check it out</a></li>
                     </ul>
-                    <ul class="icons">
-                        <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </article>
+                <article>
+                    <header>
+                        <h2><a href="https://github.com/Junsiwoo45/Spotify_Rooms">EarBook</a></h2>
+                    </header>
+                    <a href="https://github.com/Junsiwoo45/Spotify_Rooms" class="image fit rounded-image"><img src="images/earBook.PNG" alt="" /></a>
+                    <p>Fullstack application that allows the user to join rooms and play music to every user in that room. Playing </p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/Junsiwoo45/Spotify_Rooms" class="button">Check it out</a></li>
                     </ul>
-                </nav>
+                </article>
+            </section>
+        </div>
+        
+        <!-- Skills Header -->
+        <div id="skills-header">
+            <h2>Skills</h2>
+        </div>
 
-
-                <!-- Main -->
-                    <div id="main">
-
-                        <!-- Featured Post -->
-                            <article class="post featured">
-                                <header class="major">
-                                    <h2><a href="https://github.com/Junsiwoo45/Pokemon-Team-Builder/tree/master">Pokémon Team Builder</a></h2>
-                                    <h4>by Hayden Dickson</h4>
-                                    <p>A frontend-backend Android application facilitating user selection of Pokémon to assemble teams.
-                                        Using API calls calls to fetch and manipulate Pokémon data seamlessly, 
-                                        and utilized RoomDB for local storage with dynamic adding and deleting capabilities.
-                                    </p>
-                                </header>
-                                <a href="https://github.com/Junsiwoo45/Pokemon-Team-Builder/tree/master" class="image fit rounded-image"><img src="images/Pokemon.PNG" alt="" /></a>
-                                <ul class="actions special">
-                                    <li><a href="https://github.com/Junsiwoo45/Pokemon-Team-Builder/tree/master" class="button large">Check it out</a></li>
-                                </ul>
-                            </article>
-
-                        <!-- Posts -->
-                            <section class="posts">
-                                <article>
-                                    <header>
-                                        <h2><a href="https://github.com/Junsiwoo45/ConnectFour.git">Stewarts Chemical Tracker</a></h2>
-                                    </header>
-                                    <a href="https://github.com/Junsiwoo45/ConnectFour.git" class="image fit rounded-image"><img src="images/Stewarts.PNG" alt="" /></a>
-                                    <p>Djano Fullstack application that allows the User to create an account, check chemicals, and calculate rates.</p>
-                                    <ul class="actions special">
-                                        <li><a href="https://github.com/Junsiwoo45/ConnectFour.git" class="button">Check it out</a></li>
-                                    </ul>
-                                </article>
-                                <article>
-                                    <header>
-                                        
-                                        <h2><a href="https://github.com/Junsiwoo45/UserAuth.git">User Authentication
-                                        </a></h2>
-                                    </header>
-                                    <a href="https://github.com/Junsiwoo45/UserAuth.git" class="image fit rounded-image"><img src="images/login.PNG" alt="" /></a>
-                                    <p>User Login and Authentication with the use of salt.</p>
-                                    <ul class="actions special">
-                                        <li><a href="https://github.com/Junsiwoo45/UserAuth.git" class="button">Check it out</a></li>
-                                    </ul>
-                                </article>
-                            
-                            
-                            </section>
-
-                        <!-- Footer -->
-						<div class="icon-grid">
-							<div class="icon"><i class="fab fa-android fa-3x"></i></div>
-							<div class="icon"><i class="fab fa-node fa-3x"></i></div>
-							<div class="icon"><i class="fab fa-react fa-3x"></i></div>
-							<div class="icon"><i class="fab fa-java fa-3x"></i></div>
-							<!-- Add more icons as needed -->
-						</div>
-				
-                <!-- Footer -->
-				<!-- Icon Grid -->
-				<div class="icon-grid">
-					<div class="icon"><img src="images/react-svgrepo-com.svg" alt="sqlitree"></div>
-					<div class="icon"><img src="images/node-js-svgrepo-com.svg" alt="node"></div>
-					<div class="icon"><img src="images/mongodb-logo-svgrepo-com.svg" alt="mongodb-logo-svgrepo-com"></div>
-					<div class="icon"><img src="images/csharp-svgrepo-com.svg" alt="C#"></div>
-					<div class="icon"><img src="images/dotnet-svgrepo-com.svg" alt=".Neticon"></div>
-					<div class="icon"><img src="images/sql-database-sql-azure.svg" alt="sql"></div>
-					<div class="icon"><img src="images/python-svgrepo-com.svg" alt="python"></div>
-					<div class="icon"><img src="images/django-svgrepo-com.svg" alt="django"></div>
-					<div class="icon"><img src="images/mysql-svgrepo-com.svg" alt="sqlite"></div>
-					<div class="icon"><img src="images/sqlite.png" alt="sqlite"></div>
-					
-				</div>
-				
-
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul><li>&copy; Untitled</li><li>Design: <a href="">Hayden Dickson</a></li></ul>
-                    </div>
-
+        <!-- Icon Grid Container -->
+        <div id="icon-grid-container">
+            <!-- Icon Grid -->
+            <div class="icon-grid">
+                <div class="icon"><img src="images/react-svgrepo-com.svg" alt="sqlitree"></div>
+                <div class="icon"><img src="images/node-js-svgrepo-com.svg" alt="node"></div>
+                <div class="icon"><img src="images/mongodb-logo-svgrepo-com.svg" alt="mongodb-logo-svgrepo-com"></div>
+                <div class="icon"><img src="images/csharp-svgrepo-com.svg" alt="C#"></div>
+                <div class="icon"><img src="images/dotnet-svgrepo-com.svg" alt=".Neticon"></div>
+                <div class="icon"><img src="images/sql-database-sql-azure.svg" alt="sql"></div>
+                <div class="icon"><img src="images/python-svgrepo-com.svg" alt="python"></div>
+                <div class="icon"><img src="images/django-svgrepo-com.svg" alt="django"></div>
+                <div class="icon"><img src="images/mysql-svgrepo-com.svg" alt="mysql"></div>
+                <div class="icon"><img src="images/sqlite.png" alt="sqlite"></div>
+                <div class="icon"><img src="images/C++.png" alt="C++"></div>
+                <div class="icon"><img src="images/java.png" alt="java"></div>
+                <div class="icon"><img src="images/aws.png" alt="aws"></div>
+                <!-- <div class="icon"><img src="images/sqlite.png" alt="sqlite"></div>
+                <div class="icon"><img src="images/sqlite.png" alt="sqlite"></div> -->
             </div>
+        </div>
+        
+        <!-- footer -->
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; Untitled</li><li>Design: <a href="">Hayden Dickson</a></li></ul>
+        </div>
 
-        <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+    </div>
 
-    </body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
